@@ -97,12 +97,20 @@ nav a:first-of-type {
       { name: 'Events', path: '#events' },
       { name: 'Contact', path: '#contact' },
     ]"
-    :socials="[]"
+    :socials="[
+      { site: 'Bandcamp', path: 'https://maripark.bandcamp.com/music' },
+      {
+        site: 'Spotify',
+        path: 'https://open.spotify.com/artist/4BdVSgljeKysPvPGoVapuv?si=z9dSLY2QQ8-yRkJyAytffw',
+      },
+      { site: 'Apple Music', path: 'https://music.apple.com/us/artist/mari-park/1650004928' },
+      { site: 'Instagram', path: 'https://www.instagram.com/maripark__/' },
+    ]"
   />
   <Landing
     :title="'ditch lily\nevery time'"
     subtitle="new single - mar 30 2024"
     hero="ditchLily-everyTime"
-    cta=""
+    cta="https://maripark.bandcamp.com/album/ditch-lily-every-time"
   />
 </template>

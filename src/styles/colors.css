@@ -114,8 +114,12 @@
 
   --background: var(--mauve-1);
   --foreground: var(--mauve-a2);
+  --foreground-2: var(--mauve-a8);
+  --background-accent: var(--purple-11);
+  --background-accent-2: var(--purple-10);
   --text: var(--mauve-12);
   --text-muted: var(--mauve-11);
+  --focus: var(--purple-a8);
 }
 
 .text-mauve-1 {

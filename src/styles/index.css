@@ -1,7 +1,8 @@
 @import 'colors.css';
 @import 'sizes.css';
 @import 'normalize.css';
-@import '@/components/typography/index.css';
+@import 'misc.css';
+@import 'typography.css';
 
 html {
   font-family: var(--font-body);

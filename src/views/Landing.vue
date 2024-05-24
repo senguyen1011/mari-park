@@ -33,18 +33,30 @@
 
       <Flex
         id="hero-text"
-        is="hgroup"
         direction="col"
+        gap="2xl"
       >
-        <Text
-          size="xl"
-          color="text-muted"
-          >{{ props.subtitle }}</Text
+        <Flex
+          is="hgroup"
+          direction="col"
         >
-        <Heading size="9xl">{{ props.title }}</Heading>
+          <Text
+            size="xl"
+            color="text-muted"
+            >{{ props.subtitle }}</Text
+          >
+          <Heading size="9xl">{{ props.title }}</Heading>
+        </Flex>
+
+        <Button
+          size="xl"
+          link
+          :href="props.cta"
+          ><span>Listen Now</span><Icon name="graphicEq"
+        /></Button>
       </Flex>
     </Container>
-    <SplashText>maripark</SplashText>
+    <SplashText scroll>maripark</SplashText>
     <div
       class="hero-background"
       :style="{ backgroundImage: `url(${backgroundUrl})` }"
@@ -71,13 +83,13 @@
     background-size: cover;
     filter: blur(12px);
     -webkit-filter: blur(12px);
-    z-index: -1;
+    z-index: -2;
   }
 
   #hero-image {
     width: 512px;
     transform: translateX(var(--hero-intersect));
-    z-index: 0;
+    z-index: -1;
   }
 
   #hero-text {

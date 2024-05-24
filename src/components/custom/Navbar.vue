@@ -17,7 +17,6 @@
     links: navLink[];
     socials: socialLink[];
   }
-
   const props = defineProps<Props>();
 
   const active: Ref<string> = ref('');
@@ -46,17 +45,38 @@
         is="nav"
         gap="sm"
       >
-        <a
+        <Button
           v-for="link in props.links"
           :key="`nav-link-${link.name}`"
           :href="link.path"
           class="nav-link"
           :class="{ active: active === link.name.toLowerCase() }"
+          type="ghost"
+          link
         >
           {{ link.name }}
-        </a>
+        </Button>
       </Flex>
-      <span> </span>
+      <Dropdown
+        size="xl"
+        type="ghost"
+        icon
+        align="right"
+      >
+        <template #button>
+          <Icon name="queueMusic" />
+        </template>
+        <template #options>
+          <DropdownOption
+            v-for="link in props.socials"
+            :key="`nav-link-${link.site}`"
+          >
+            <a :href="link.path">
+              {{ link.site }}
+            </a>
+          </DropdownOption>
+        </template>
+      </Dropdown>
     </Container>
   </Flex>
 </template>
@@ -71,7 +91,7 @@
     width: 100vw;
     height: var(--nav-height);
     color: var(--text);
-    background-color: var(--foreground);
+    /* background-color: var(--foreground); */
     z-index: 100;
   }
 

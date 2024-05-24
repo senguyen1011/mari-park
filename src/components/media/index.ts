@@ -1,2 +1,3 @@
+import Icon from './Icon.vue';
 import Image from './Image.vue';
-export { Image };
+export { Icon, Image };
