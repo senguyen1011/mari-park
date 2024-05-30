@@ -123,7 +123,7 @@
     z-index: 1000;
     transition-property: background-color, backdrop-filter;
     transition-timing-function: var(--transition-ease);
-    transition-duration: 300ms;
+    transition-duration: var(--transition-time);
   }
   #nav-wrapper.on-landing {
     background-color: transparent;
