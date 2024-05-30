@@ -9,34 +9,40 @@
 </script>
 
 <template>
-  <img
-    :src="`/images/${props.src}.jpg`"
-    :alt="props.alt"
-    class="image"
-    :class="props.aspectRatio"
-  />
+  <div
+    class="img"
+    :class="props.aspectRatio && `aspect-${props.aspectRatio.replace(':', '-')}`"
+  >
+    <img
+      :src="`/images/${props.src}.jpg`"
+      :alt="props.alt"
+    />
+  </div>
 </template>
 
 <style>
-  .image {
+  .img {
+    overflow: hidden;
+  }
+  .img img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
 
-  .image.\1\:1 {
-    aspect-ratio: 1;
+  .img.aspect-1-1 {
+    aspect-ratio: 1/1;
   }
-  .image.\2\:3 {
+  .img.aspect-2-3 {
     aspect-ratio: 2/3;
   }
-  .image.\3\:2 {
+  .img.aspect-3-2 {
     aspect-ratio: 3/2;
   }
-  .image.\9\:16 {
+  .img.aspect-9-16 {
     aspect-ratio: 9/16;
   }
-  .image.\16\:9 {
+  .img.aspect-16-9 {
     aspect-ratio: 16/9;
   }
 </style>

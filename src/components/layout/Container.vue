@@ -62,12 +62,13 @@
 </script>
 
 <template>
-  <div
+  <component
+    :is="props.is"
     class="container"
     :class="classes"
   >
     <slot></slot>
-  </div>
+  </component>
 </template>
 
 <style>

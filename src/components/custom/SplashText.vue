@@ -29,17 +29,29 @@
   .splash-text {
     position: absolute;
     top: 0;
-    z-index: 0;
+    z-index: -1;
     width: 100%;
     height: 100%;
-  }
-  .splash-text span {
     font-family: var(--font-display);
-    font-size: var(--size-64);
+    font-size: var(--size-32);
     writing-mode: vertical-lr;
-    opacity: 10%;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+    opacity: 15%;
+    pointer-events: none;
+  }
+  @media (width > 640px) {
+    .splash-text {
+      font-size: var(--size-40);
+    }
+  }
+  @media (width > 768px) {
+    .splash-text {
+      font-size: var(--size-48);
+    }
+  }
+  @media (width > 1024px) {
+    .splash-text {
+      font-size: var(--size-64);
+    }
   }
   .scroll-container {
     position: relative;
@@ -50,7 +62,7 @@
 
   .scroll-text {
     --scroll-duration: 60s;
-    --scroll-distance: 100%;
+    --scroll-distance: 150%;
     position: absolute;
     animation: var(--animation-value);
     -moz-animation: var(--animation-value);

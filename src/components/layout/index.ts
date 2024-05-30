@@ -4,21 +4,28 @@ import type { margin, size, space } from '@/styles/types';
 import Box from './Box.vue';
 import Container from './Container.vue';
 import Flex from './Flex.vue';
+import Grid from './Grid.vue';
+import GridItem from './GridItem.vue';
 
 /* Types */
-type content =
-  | 'start'
-  | 'center'
-  | 'end'
-  | 'space-between'
-  | 'space-around'
-  | 'space-evenly'
-  | 'stretch';
+type content = 'start' | 'center' | 'end' | 'between' | 'around' | 'evenly' | 'stretch';
 type items = 'start' | 'center' | 'end' | 'stretch';
 
 /* Props */
 interface BoxProps {
-  is?: 'aside' | 'footer' | 'header' | 'hgroup' | 'main' | 'nav' | 'section' | 'div' | 'span';
+  is?:
+    | 'aside'
+    | 'footer'
+    | 'header'
+    | 'hgroup'
+    | 'main'
+    | 'nav'
+    | 'section'
+    | 'div'
+    | 'span'
+    | 'ul'
+    | 'ol'
+    | 'li';
   width?: size;
   minWidth?: size;
   maxWidth?: size;
@@ -95,4 +102,4 @@ function getFlexClasses(props: FlexProps): ComputedRef<string[]> {
 
 export type { BoxProps, FlexProps };
 export { getBoxClasses, getFlexClasses };
-export { Box, Container, Flex };
+export { Box, Container, Flex, Grid, GridItem };

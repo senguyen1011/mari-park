@@ -64,7 +64,9 @@
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
-    z-index: 3;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    z-index: 100;
   }
   .dropdown-options.left {
     left: 0;

@@ -41,7 +41,7 @@ function getTextClasses(props: TextProps): ComputedRef<string[]> {
     addToClasses(res, props.size, 'font');
     addToClasses(res, props.weight, 'font');
     addToClasses(res, props.color, 'text');
-    addToClasses(res, props.align, 'align');
+    addToClasses(res, props.align, 'text');
     addToClasses(res, props.transform, 'text');
     return res;
   });

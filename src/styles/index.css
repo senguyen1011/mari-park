@@ -4,14 +4,19 @@
 @import 'misc.css';
 @import 'typography.css';
 
+* {
+  box-sizing: border-box;
+}
 html {
   font-family: var(--font-body);
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--text);
   background-color: var(--background);
+  overflow-x: hidden;
 }
 
 a {

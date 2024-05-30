@@ -38,5 +38,3 @@
     <slot></slot>
   </component>
 </template>
-
-<style></style>

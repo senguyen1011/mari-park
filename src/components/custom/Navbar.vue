@@ -1,14 +1,11 @@
 <script setup lang="ts">
-  import { type Ref, ref } from 'vue';
+  import { ref, onMounted, type Ref } from 'vue';
+  import { useBreakpoints } from '@/lib';
+  import type { socialLink } from '.';
 
   /* Types */
   type navLink = {
     name: string;
-    path: string;
-  };
-
-  type socialLink = {
-    site: string;
     path: string;
   };
 
@@ -19,7 +16,26 @@
   }
   const props = defineProps<Props>();
 
-  const active: Ref<string> = ref('');
+  /* Scroll Functionality */
+  const onLanding: Ref<boolean> = ref(true);
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(({ isIntersecting }) => {
+        onLanding.value = isIntersecting;
+      });
+    },
+    {
+      root: document.querySelector('#root'),
+      rootMargin: '0px',
+      threshold: [0.75],
+    }
+  );
+
+  onMounted(() => {
+    observer.observe(document.querySelector('#landing')!);
+  });
+
+  const { width } = useBreakpoints();
 </script>
 
 <template>
@@ -27,17 +43,19 @@
     id="nav-wrapper"
     justifyContent="center"
     alignItems="center"
+    :class="{ 'on-landing': onLanding }"
   >
     <Container
       padY="sm"
       padX="xl"
-      justifyContent="between"
+      :direction="width > 640 ? 'row' : 'col'"
+      :justifyContent="width > 640 ? 'between' : 'center'"
       alignItems="center"
-      gap="md"
+      :gap="width > 640 ? 'md' : 'xs'"
     >
       <a
         id="brand"
-        href="/"
+        href="#landing"
       >
         maripark
       </a>
@@ -50,7 +68,6 @@
           :key="`nav-link-${link.name}`"
           :href="link.path"
           class="nav-link"
-          :class="{ active: active === link.name.toLowerCase() }"
           type="ghost"
           link
         >
@@ -58,6 +75,7 @@
         </Button>
       </Flex>
       <Dropdown
+        v-if="width > 640"
         size="xl"
         type="ghost"
         icon
@@ -68,11 +86,14 @@
         </template>
         <template #options>
           <DropdownOption
-            v-for="link in props.socials"
-            :key="`nav-link-${link.site}`"
+            v-for="social in props.socials"
+            :key="`social-link-${social.site}`"
           >
-            <a :href="link.path">
-              {{ link.site }}
+            <a
+              class="dropdown-social-link"
+              :href="social.path"
+            >
+              <Icon :name="social.icon" />
             </a>
           </DropdownOption>
         </template>
@@ -83,16 +104,35 @@
 
 <style>
   :root {
-    --nav-height: var(--size-16);
+    --nav-height: var(--size-24);
+  }
+  @media (width > 640px) {
+    :root {
+      --nav-height: var(--size-16);
+    }
   }
 
   #nav-wrapper {
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: var(--nav-height);
     color: var(--text);
-    /* background-color: var(--foreground); */
-    z-index: 100;
+    background-color: var(--background-navbar);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+    transition-property: background-color, backdrop-filter;
+    transition-timing-function: var(--transition-ease);
+    transition-duration: 300ms;
+  }
+  #nav-wrapper.on-landing {
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+  }
+  #nav-wrapper.on-landing .nav-link {
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
   }
 
   #brand {
@@ -107,5 +147,11 @@
     color: inherit;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  .dropdown-social-link {
+    display: flex;
+    align-items: center;
+    height: var(--space-xl);
   }
 </style>
