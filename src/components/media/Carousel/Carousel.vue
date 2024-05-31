@@ -145,7 +145,7 @@
     pointer-events: all;
   }
 
-  @media (width > 640) {
+  @media (width > 640px) {
     .step-buttons button {
       width: fit-content;
       padding: var(--size-px) var(--space-md);
