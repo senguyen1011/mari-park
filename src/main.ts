@@ -5,7 +5,7 @@ import App from './App.vue';
 import { Footer, Navbar, SplashText } from './components/custom';
 import { Button, Dropdown, DropdownOption } from './components/forms';
 import { Box, Container, Flex, Grid, GridItem } from './components/layout';
-import { Icon, Image } from './components/media';
+import { Carousel, Icon, Image, Video } from './components/media';
 import { Heading, Text } from './components/typography';
 
 const app = createApp(App);
@@ -21,6 +21,10 @@ app
   .component('Flex', Flex)
   .component('Grid', Grid)
   .component('GridItem', GridItem);
-app.component('Icon', Icon).component('Image', Image);
+app
+  .component('Carousel', Carousel)
+  .component('Icon', Icon)
+  .component('Image', Image)
+  .component('Video', Video);
 app.component('Heading', Heading).component('Text', Text);
 app.mount('#app');

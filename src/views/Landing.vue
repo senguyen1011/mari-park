@@ -72,7 +72,7 @@
         &nbsp;
       </div>
     </Container>
-    <SplashText scroll>maripark</SplashText>
+    <SplashText scroll>mari park</SplashText>
     <div
       class="hero-background"
       :style="{ backgroundImage: `url(${backgroundUrl})` }"

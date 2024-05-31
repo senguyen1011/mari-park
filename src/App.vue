@@ -4,6 +4,7 @@
   import Landing from '@/views/Landing.vue';
   import About from '@/views/About.vue';
   import Discography from '@/views/Discography.vue';
+  import Videos from '@/views/Videos.vue';
   import Events from '@/views/Events.vue';
 </script>
 
@@ -12,6 +13,7 @@
     :links="[
       { name: 'About', path: '#about' },
       { name: 'Discography', path: '#discography' },
+      { name: 'Videos', path: '#videos' },
       { name: 'Events', path: '#events' },
       { name: 'Contact', path: `mailto: ${config.contactEmail}` },
     ]"
@@ -28,6 +30,7 @@
     :bio="config.about.bio"
   />
   <Discography :discography="config.discography" />
+  <Videos :videos="config.videos" />
   <Events :events="config.events" />
   <Footer :socials="config.socials" />
 </template>

@@ -57,7 +57,7 @@
         id="brand"
         href="#landing"
       >
-        maripark
+        mari park
       </a>
       <Flex
         is="nav"

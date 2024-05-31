@@ -47,6 +47,7 @@
       <Heading :size="width > 1024 ? '7xl' : width > 640 ? '6xl' : '5xl'">discography</Heading>
       <Heading :size="width > 1024 ? '5xl' : width > 640 ? '4xl' : '3xl'">albums</Heading>
       <Grid
+        v-if="width > 640"
         :cols="gridSize"
         :rows="Math.ceil(props.discography.albums.length / gridSize)"
         gap="lg"
@@ -103,8 +104,62 @@
           </Flex>
         </GridItem>
       </Grid>
+      <Carousel v-else>
+        <div
+          v-for="item in props.discography.albums"
+          :key="`discography-${item.art}`"
+        >
+          <Flex
+            direction="col"
+            alignItems="center"
+            gap="sm"
+          >
+            <div class="disc-item">
+              <div class="disc-overlay">
+                <Text>{{ item.release }}</Text>
+                <Flex gap="md">
+                  <Button
+                    :href="item.bandcamp"
+                    target="_blank"
+                    type="ghost"
+                    color="light"
+                    icon
+                    link
+                    ><Icon name="bandcamp"
+                  /></Button>
+                  <Button
+                    :href="item.spotify"
+                    target="_blank"
+                    type="ghost"
+                    color="light"
+                    icon
+                    link
+                    ><Icon name="spotify"
+                  /></Button>
+                  <Button
+                    :href="item.appleMusic"
+                    target="_blank"
+                    type="ghost"
+                    color="light"
+                    icon
+                    link
+                    ><Icon name="appleMusic"
+                  /></Button>
+                </Flex>
+              </div>
+              <Image
+                :src="item.art"
+                :alt="item.title"
+                aspectRatio="1:1"
+              />
+            </div>
+            <Text>{{ item.title }}</Text>
+          </Flex>
+        </div>
+      </Carousel>
       <Heading :size="width > 1024 ? '5xl' : width > 640 ? '4xl' : '3xl'">singles</Heading>
       <Grid
+        v-if="width > 640"
         :cols="gridSize"
         :rows="Math.ceil(props.discography.singles.length / gridSize)"
         gap="lg"
@@ -161,8 +216,62 @@
           </Flex>
         </GridItem>
       </Grid>
+      <Carousel v-else>
+        <div
+          v-for="item in props.discography.singles"
+          :key="`discography-${item.art}`"
+        >
+          <Flex
+            direction="col"
+            alignItems="center"
+            gap="sm"
+          >
+            <div class="disc-item">
+              <div class="disc-overlay">
+                <Text>{{ item.release }}</Text>
+                <Flex gap="md">
+                  <Button
+                    :href="item.bandcamp"
+                    target="_blank"
+                    type="ghost"
+                    color="light"
+                    icon
+                    link
+                    ><Icon name="bandcamp"
+                  /></Button>
+                  <Button
+                    :href="item.spotify"
+                    target="_blank"
+                    type="ghost"
+                    color="light"
+                    icon
+                    link
+                    ><Icon name="spotify"
+                  /></Button>
+                  <Button
+                    :href="item.appleMusic"
+                    target="_blank"
+                    type="ghost"
+                    color="light"
+                    icon
+                    link
+                    ><Icon name="appleMusic"
+                  /></Button>
+                </Flex>
+              </div>
+              <Image
+                :src="item.art"
+                :alt="item.title"
+                aspectRatio="1:1"
+              />
+            </div>
+            <Text>{{ item.title }}</Text>
+          </Flex>
+        </div>
+      </Carousel>
       <Heading :size="width > 1024 ? '5xl' : width > 640 ? '4xl' : '3xl'">featured on</Heading>
       <Grid
+        v-if="width > 640"
         :cols="gridSize"
         :rows="Math.ceil(props.discography.features.length / gridSize)"
         gap="lg"
@@ -220,6 +329,60 @@
           </Flex>
         </GridItem>
       </Grid>
+      <Carousel v-else>
+        <div
+          v-for="item in props.discography.features"
+          :key="`discography-${item.art}`"
+        >
+          <Flex
+            direction="col"
+            alignItems="center"
+            gap="sm"
+          >
+            <div class="disc-item">
+              <div class="disc-overlay">
+                <Text>{{ item.release }}</Text>
+                <Text size="sm">{{ item.artists }}</Text>
+                <Flex gap="md">
+                  <Button
+                    :href="item.bandcamp"
+                    target="_blank"
+                    type="ghost"
+                    color="light"
+                    icon
+                    link
+                    ><Icon name="bandcamp"
+                  /></Button>
+                  <Button
+                    :href="item.spotify"
+                    target="_blank"
+                    type="ghost"
+                    color="light"
+                    icon
+                    link
+                    ><Icon name="spotify"
+                  /></Button>
+                  <Button
+                    :href="item.appleMusic"
+                    target="_blank"
+                    type="ghost"
+                    color="light"
+                    icon
+                    link
+                    ><Icon name="appleMusic"
+                  /></Button>
+                </Flex>
+              </div>
+              <Image
+                :src="item.art"
+                :alt="item.title"
+                aspectRatio="1:1"
+              />
+            </div>
+            <Text>{{ item.title }}</Text>
+          </Flex>
+        </div>
+      </Carousel>
     </Container>
     <SplashText scroll>discography</SplashText>
   </section>

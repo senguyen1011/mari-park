@@ -36,6 +36,7 @@
           :key="`event-${event.date}-${event.location}`"
         >
           <Flex
+            v-if="width > 640"
             gap="lg"
             justifyContent="between"
             alignItems="center"
@@ -47,14 +48,20 @@
               <Text size="xl">{{ event.date }}</Text>
               <Text>{{ event.location }} @ {{ event.venue }}</Text>
             </Flex>
-            <div class="li-line"></div>
-            <Button
-              :href="event.path"
-              target="_blank"
-              link
-              >Tickets</Button
-            >
+            <template v-if="width > 640">
+              <div class="li-line"></div>
+              <Button
+                :href="event.path"
+                target="_blank"
+                link
+                >Tickets</Button
+              >
+            </template>
           </Flex>
+
+          <Button v-else
+            ><Text size="xl">{{ event.date }}</Text> - {{ event.location }} @ {{ event.venue }}
+          </Button>
         </li>
       </Flex>
       <Text

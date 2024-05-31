@@ -98,6 +98,11 @@
       }
     ]
   },
+  "videos": [
+    "https://www.youtube.com/embed/F0gsKF0dYrc?si=NrRcfirmo2NOVMvT",
+    "https://www.youtube.com/embed/xuzKafChH7k?si=fD-RbzpN9QHQl9A2",
+    "https://www.youtube.com/embed/zH-hdtqeaZI?si=PyE-GP3xuQyxUYQC"
+  ],
   "events": [
     {
       "date": "May 29, 2024",
@@ -120,14 +125,14 @@
   ],
   "socials": [
     {
-      "site": "Bandcamp",
-      "icon": "bandcamp",
-      "path": "https://maripark.bandcamp.com/music"
-    },
-    {
       "site": "Spotify",
       "icon": "spotify",
       "path": "https://open.spotify.com/artist/4BdVSgljeKysPvPGoVapuv?si=z9dSLY2QQ8-yRkJyAytffw"
+    },
+    {
+      "site": "Bandcamp",
+      "icon": "bandcamp",
+      "path": "https://maripark.bandcamp.com/music"
     },
     {
       "site": "Apple Music",
