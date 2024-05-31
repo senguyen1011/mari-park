@@ -2,6 +2,7 @@
   import { ref, onMounted, type Ref } from 'vue';
   import { useBreakpoints } from '@/lib';
   import type { socialLink } from '.';
+  import config from '../../../site-config.json';
 
   /* Types */
   type navLink = {
@@ -48,11 +49,15 @@
     <Container
       padY="sm"
       padX="xl"
-      :direction="width > 640 ? 'row' : 'col'"
-      :justifyContent="width > 640 ? 'between' : 'center'"
+      direction="row"
+      justifyContent="between"
       alignItems="center"
-      :gap="width > 640 ? 'md' : 'xs'"
+      gap="md"
     >
+      <span
+        class="spacer"
+        v-if="width <= 640"
+      ></span>
       <a
         id="brand"
         href="#landing"
@@ -60,6 +65,7 @@
         mari park
       </a>
       <Flex
+        v-if="width > 640"
         is="nav"
         gap="sm"
       >
@@ -74,6 +80,14 @@
           {{ link.name }}
         </Button>
       </Flex>
+      <Button
+        v-if="width <= 640"
+        type="ghost"
+        icon
+        link
+        :href="`mailto: ${config.contactEmail}`"
+        ><Icon name="mail"
+      /></Button>
       <Dropdown
         v-if="width > 640"
         size="xl"
@@ -104,7 +118,7 @@
 
 <style>
   :root {
-    --nav-height: var(--size-24);
+    --nav-height: var(--size-16);
   }
   @media (width > 640px) {
     :root {
@@ -153,5 +167,9 @@
     display: flex;
     align-items: center;
     height: var(--space-xl);
+  }
+
+  #nav-wrapper .spacer {
+    width: calc(var(--space-xl) + 2px);
   }
 </style>
