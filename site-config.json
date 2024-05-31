@@ -6,7 +6,7 @@
     "callToAction": "https://maripark.bandcamp.com/album/ditch-lily-every-time"
   },
   "about": {
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel. Orci a scelerisque purus semper eget duis at tellus at. Turpis egestas maecenas pharetra convallis posuere morbi leo. Quis varius quam quisque id diam vel quam elementum pulvinar. Viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat. A diam sollicitudin tempor id eu nisl nunc mi ipsum. Felis eget nunc lobortis mattis aliquam. Hendrerit gravida rutrum quisque non tellus orci ac auctor. Non tellus orci ac auctor. Tristique et egestas quis ipsum. Eget magna fermentum iaculis eu non diam phasellus.Ipsum dolor sit amet consectetur adipiscing elit. Purus non enim praesent elementum facilisis leo vel fringilla. Faucibus vitae aliquet nec ullamcorper sit amet risus. Lorem sed risus ultricies tristique nulla aliquet enim tortor. At elementum eu facilisis sed odio morbi quis. Dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc. Mattis enim ut tellus elementum sagittis. Non quam lacus suspendisse faucibus. Velit aliquet sagittis id consectetur purus ut. Viverra adipiscing at in tellus integer. Diam sit amet nisl suscipit adipiscing. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Quam elementum pulvinar etiam non quam lacus suspendisse faucibus.",
+    "bio": "mari park is a Midwest-based singer-songwriter, producer, DJ and guitarist who began their musical journey at age 11 learning classical guitar in their hometown of Saint Louis, Missouri. At 18 mari would begin writing and creating their own music before graduating high school. Their sophomore year of college they would release their first EP 'sharp objects' in 2022 and 'then you don't cry' the following summer while studying classical guitar performance and TIMARA at Oberlin Conservatory of Music. mari's discography explores themes of youth, love, trauma and mental illness through a lens of reflective nostalgia. Their instrumentals range from simple acoustic guitar to distorted field recordings to pop-inspired synths and electronic drums. mari's lyrics remain haunting, unapologetic, and sometimes graphic but always honest.",   
     "profileImage": "youDontCry"
   },
   "discography": {
@@ -99,29 +99,14 @@
     ]
   },
   "videos": [
-    "https://www.youtube.com/embed/F0gsKF0dYrc?si=NrRcfirmo2NOVMvT",
-    "https://www.youtube.com/embed/xuzKafChH7k?si=fD-RbzpN9QHQl9A2",
-    "https://www.youtube.com/embed/zH-hdtqeaZI?si=PyE-GP3xuQyxUYQC"
+    "https://www.youtube.com/embed/2LY3VO7ckBA?si=1CCmP7fhdgEur7Tp",
+    "https://www.youtube.com/embed/1qO9IegTp1Y?si=k3acik1Y3kBFPJeN",
   ],
   "events": [
     {
-      "date": "May 29, 2024",
-      "location": "Detroit, MI",
-      "venue": "EL Club",
-      "path": "https://dice.fm"
+      
     },
-    {
-      "date": "May 29, 2024",
-      "location": "Detroit, MI",
-      "venue": "EL Club",
-      "path": "https://dice.fm"
-    },
-    {
-      "date": "May 29, 2024",
-      "location": "Detroit, MI",
-      "venue": "EL Club",
-      "path": "https://dice.fm"
-    }
+  
   ],
   "socials": [
     {
@@ -145,5 +130,5 @@
       "path": "https://www.instagram.com/maripark__/"
     }
   ],
-  "contactEmail": "test@test.com"
+  "contactEmail": "mariparkmusic@gmail.com"
 }
