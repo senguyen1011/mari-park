@@ -1,0 +1,149 @@
+{
+  "landing": {
+    "title": "ditch lily\nevery time",
+    "subtitle": "new single - mar 30 2024",
+    "heroImage": "ditchLily-everyTime",
+    "callToAction": "https://maripark.bandcamp.com/album/ditch-lily-every-time"
+  },
+  "about": {
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel. Orci a scelerisque purus semper eget duis at tellus at. Turpis egestas maecenas pharetra convallis posuere morbi leo. Quis varius quam quisque id diam vel quam elementum pulvinar. Viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat. A diam sollicitudin tempor id eu nisl nunc mi ipsum. Felis eget nunc lobortis mattis aliquam. Hendrerit gravida rutrum quisque non tellus orci ac auctor. Non tellus orci ac auctor. Tristique et egestas quis ipsum. Eget magna fermentum iaculis eu non diam phasellus.Ipsum dolor sit amet consectetur adipiscing elit. Purus non enim praesent elementum facilisis leo vel fringilla. Faucibus vitae aliquet nec ullamcorper sit amet risus. Lorem sed risus ultricies tristique nulla aliquet enim tortor. At elementum eu facilisis sed odio morbi quis. Dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc. Mattis enim ut tellus elementum sagittis. Non quam lacus suspendisse faucibus. Velit aliquet sagittis id consectetur purus ut. Viverra adipiscing at in tellus integer. Diam sit amet nisl suscipit adipiscing. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Quam elementum pulvinar etiam non quam lacus suspendisse faucibus.",
+    "profileImage": "youDontCry"
+  },
+  "discography": {
+    "albums": [
+      {
+        "title": "you don't cry",
+        "art": "youDontCry",
+        "release": "September 9, 2023",
+        "bandcamp": "https://maripark.bandcamp.com/album/you-dont-cry",
+        "spotify": "https://open.spotify.com/album/0pqFsXe8BCa5B2KYrQJRab?si=OTFZvbFXQoq40V9sDZmjQw",
+        "appleMusic": "https://music.apple.com/us/album/you-dont-cry-ep/1702392997"
+      },
+      {
+        "title": "sharp objects",
+        "art": "sharpObjects",
+        "release": "February 1, 2023",
+        "bandcamp": "https://maripark.bandcamp.com/album/sharp-objects",
+        "spotify": "https://open.spotify.com/album/7bsIZoZxY1i4YUkvV5pGPn?si=Pg0cF08-SY-z8gtJb4vTSg",
+        "appleMusic": "https://music.apple.com/us/album/sharp-objects-ep/1668013698"
+      }
+    ],
+    "singles": [
+      {
+        "title": "ditch lily/every time",
+        "art": "ditchLily-everyTime",
+        "release": "March 30, 2024",
+        "bandcamp": "https://maripark.bandcamp.com/album/ditch-lily-every-time",
+        "spotify": "https://open.spotify.com/album/6cZP0A0fBDkvsWnekQOLxi?si=u-gx6OeQROm-j_4OuWFyWA",
+        "appleMusic": "https://music.apple.com/us/album/ditch-lily-every-time-single/1736703181"
+      },
+      {
+        "title": "for you i hold my breath",
+        "art": "forYouIHoldMyBreath",
+        "release": "November 9, 2023",
+        "bandcamp": "https://maripark.bandcamp.com/track/for-you-i-hold-my-breath",
+        "spotify": "https://open.spotify.com/album/1OWbZKqjEF9ZOUHJUDqPRy?si=ha5RZoSWTCCpy2gPpWVyCA",
+        "appleMusic": "https://music.apple.com/us/album/for-you-i-hold-my-breath-single/1714836230"
+      },
+      {
+        "title": "like this",
+        "art": "likeThis",
+        "release": "July 9, 2023",
+        "bandcamp": "https://maripark.bandcamp.com/track/like-this",
+        "spotify": "https://open.spotify.com/album/1DSzSa33a4V4WTEthxdXeX?si=Dv77AdVgS7uFPqejizNhmA",
+        "appleMusic": "https://music.apple.com/us/album/like-this-single/1691198677"
+      },
+      {
+        "title": "a long walk home",
+        "art": "aLongWalkHome",
+        "release": "May 12, 2023",
+        "bandcamp": "https://maripark.bandcamp.com/track/a-long-walk-home",
+        "spotify": "https://open.spotify.com/album/2FTC8l3tT5MaerxxyzDCe4?si=EjqOoiGXSHC-uU7jMnYFLw",
+        "appleMusic": "https://music.apple.com/us/album/a-long-walk-home-single/1686512413"
+      },
+      {
+        "title": "lucy",
+        "art": "lucy",
+        "release": "May 12, 2023",
+        "bandcamp": "https://maripark.bandcamp.com/track/lucy",
+        "spotify": "https://open.spotify.com/album/6KvIzae0ZL9IUUkVybPWdS?si=lx_apCCHSpuuHWoEN6olsQ",
+        "appleMusic": "https://music.apple.com/us/album/lucy-single/1687383598"
+      },
+      {
+        "title": "geyser",
+        "art": "geyser",
+        "release": "February 11, 2023",
+        "bandcamp": "https://maripark.bandcamp.com/track/geyser-mitski-cover",
+        "spotify": "hhttps://open.spotify.com/album/07W3CXjQozPTaK3GVRTBPT?si=UE0EMRJ6QRW07OoIDalQSA",
+        "appleMusic": "https://music.apple.com/us/album/geyser-single/1671271702"
+      },
+      {
+        "title": "vents",
+        "art": "vents",
+        "release": "May 20, 2022",
+        "bandcamp": "https://maripark.bandcamp.com/track/vents",
+        "spotify": "https://open.spotify.com/album/4xUdk3NUTEM3gk2XXzeCUF?si=BPnu7-omT8qZVazopnkXmg",
+        "appleMusic": "https://music.apple.com/us/album/vents-single/1650159925"
+      }
+    ],
+    "features": [
+      {
+        "title": "propane",
+        "art": "propane",
+        "artists": "iyrliaes, yaoguaai, mari park",
+        "release": "January 18, 2024",
+        "bandcamp": "https://iyrliaes.bandcamp.com/track/propane",
+        "spotify": "https://open.spotify.com/album/5vCCxsaruEdmZMbvBaemP8?si=9aLiCPs1R1SMBJjfkIJLug",
+        "appleMusic": "https://music.apple.com/us/album/propane/1725992984?i=1725992985"
+      }
+    ]
+  },
+  "videos": [
+    "https://www.youtube.com/embed/F0gsKF0dYrc?si=NrRcfirmo2NOVMvT",
+    "https://www.youtube.com/embed/xuzKafChH7k?si=fD-RbzpN9QHQl9A2",
+    "https://www.youtube.com/embed/zH-hdtqeaZI?si=PyE-GP3xuQyxUYQC"
+  ],
+  "events": [
+    {
+      "date": "May 29, 2024",
+      "location": "Detroit, MI",
+      "venue": "EL Club",
+      "path": "https://dice.fm"
+    },
+    {
+      "date": "May 29, 2024",
+      "location": "Detroit, MI",
+      "venue": "EL Club",
+      "path": "https://dice.fm"
+    },
+    {
+      "date": "May 29, 2024",
+      "location": "Detroit, MI",
+      "venue": "EL Club",
+      "path": "https://dice.fm"
+    }
+  ],
+  "socials": [
+    {
+      "site": "Spotify",
+      "icon": "spotify",
+      "path": "https://open.spotify.com/artist/4BdVSgljeKysPvPGoVapuv?si=z9dSLY2QQ8-yRkJyAytffw"
+    },
+    {
+      "site": "Bandcamp",
+      "icon": "bandcamp",
+      "path": "https://maripark.bandcamp.com/music"
+    },
+    {
+      "site": "Apple Music",
+      "icon": "appleMusic",
+      "path": "https://music.apple.com/us/artist/mari-park/1650004928"
+    },
+    {
+      "site": "Instagram",
+      "icon": "instagram",
+      "path": "https://www.instagram.com/maripark__/"
+    }
+  ],
+  "contactEmail": "test@test.com"
+}
